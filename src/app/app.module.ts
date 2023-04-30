@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { TabExampleComponent } from './tab-example/tab-example.component';
 import { AccordionExampleComponent } from './accordion-example/accordion-example.component';
 import { SidebarExampleComponent } from './sidebar-example/sidebar-example.component';
+import { BadgeExampleComponent } from './badge-example/badge-example.component';
 import { sysDesignModule } from 'sysdesign2023';
 //  ng run sys-design:storybook
 //  ng run sys-design:build-storybook
@@ -27,6 +28,7 @@ import { sysDesignModule } from 'sysdesign2023';
     TabExampleComponent,
     AccordionExampleComponent,
     SidebarExampleComponent,
+    BadgeExampleComponent,
   ],
   imports: [
     BrowserModule,
