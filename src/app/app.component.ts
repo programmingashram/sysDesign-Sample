@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,8 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sys-design';
-    small : boolean = false;
+    small : boolean = true;
     menu(){
       this.small = !this.small;
     }
+
 }
