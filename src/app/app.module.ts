@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
 import { ButtonExampleComponent } from './button-example/button-example.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
@@ -17,6 +16,8 @@ import { BadgeExampleComponent } from './badge-example/badge-example.component';
 import { AlertExampleComponent } from './alert-example/alert-example.component';
 import { DialogExampleComponent } from './dialog-example/dialog-example.component';
 import { TreeExampleComponent } from './tree-example/tree-example.component';
+import { FormExampleComponent } from './form-example/form-example.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { sysDesignModule } from 'sysdesign2023';
 //  ng run sys-design:storybook
 //  ng run sys-design:build-storybook
@@ -35,12 +36,15 @@ import { sysDesignModule } from 'sysdesign2023';
     AlertExampleComponent,
     DialogExampleComponent,
     TreeExampleComponent,
+    FormExampleComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     sysDesignModule,
     MatIconModule,
+    FormsModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule
   ],
   providers: [],

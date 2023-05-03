@@ -32,6 +32,9 @@ MIT
 @angular/core
 MIT
 
+@angular/forms
+MIT
+
 @angular/material
 MIT
 The MIT License
@@ -295,6 +298,7 @@ Apache-2.0
 
 
 sysdesign2023
+MIT
 
 tslib
 0BSD
