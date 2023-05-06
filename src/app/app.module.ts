@@ -19,9 +19,8 @@ import { DialogExampleComponent } from './dialog-example/dialog-example.componen
 import { TreeExampleComponent } from './tree-example/tree-example.component';
 import { FormExampleComponent } from './form-example/form-example.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { sysDesignModule } from 'sysdesign2023';
 import { SlideExampleComponent } from './slide-example/slide-example.component';
-
+import { sysDesignModule } from 'sysdesign2023';
 //  ng run sys-design:storybook
 //  ng run sys-design:build-storybook
 
@@ -40,7 +39,7 @@ import { SlideExampleComponent } from './slide-example/slide-example.component';
     DialogExampleComponent,
     TreeExampleComponent,
     FormExampleComponent,
-    SlideExampleComponent
+    SlideExampleComponent,
   ],
   imports: [
     BrowserModule,
