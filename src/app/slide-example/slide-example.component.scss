@@ -1,28 +1,27 @@
-.flex-box{
-  display: flex;
-  gap: 0px 20px;
-
-}
 ::ng-deep{
-  .sys-card-body{
-     padding: 10px;
+  .sys-radio-group{
+    display: flex;
+    gap: 22px;
+    align-items: center;
+
   }
 }
-.p-10{
-  padding:1rem;
-}
+
 table{
   width: 100%;
   tbody tr{
+    th{
+      width: 94px;
+      font-weight: 400;
+    }
     display: flex;
+    align-items: center;
+    gap: 0px 60px;
     td{
-      h5{
-        font-weight: 900;
-      }
       // border: 1px solid  rgba(128, 128, 128, 0.1411764706);
-      padding: 1rem;
+      padding: 0.5rem;
       float: left;
-      width: 33.333%;
+      width: 25%;
     }
   }
 }
@@ -30,7 +29,11 @@ table{
 @media(max-width: 767px){
   table{
     width: 100%;
+    font-weight: 400;
     tbody tr{
+      th{
+        width: auto;
+      }
       display: flex;
       flex-wrap: wrap;
       td{
