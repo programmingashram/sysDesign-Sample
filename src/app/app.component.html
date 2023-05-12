@@ -23,6 +23,16 @@
   <div class="right">
     <sys-header [fixed]="true" logo="SYS DESIGN" subTitle="New gen. frontend library">
       <sys-button icon="attachment"  class="rounded"  [iconBtn]="true" ></sys-button>
+      <form [formGroup]="myForm">
+        <select name="" id="" formControlName="test" (change)="myThemeChange()">
+          <option value="defaut">
+              Default
+          </option>
+          <option value="darkTheme">
+            Dark Theme
+        </option>
+        </select>
+      </form>
     </sys-header>
   </div>
 </div>

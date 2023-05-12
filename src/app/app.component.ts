@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 import { TreeNode } from 'sysdesign2023';
 
 
@@ -32,4 +33,24 @@ export class AppComponent {
       ]
     },
   ];
+
+
+  myForm: FormGroup;
+  constructor() { }
+
+
+  ngOnInit(){
+    this.myForm = new FormGroup({
+      test : new FormControl(),
+    });
+
+
+
+  }
+  myThemeChange(){
+    console.log(this.myForm.getRawValue().test);
+    let body = document.querySelector('body');
+    body?.classList.toggle(`${this.myForm.getRawValue().test}`);
+  }
+
 }
