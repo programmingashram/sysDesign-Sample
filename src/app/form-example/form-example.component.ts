@@ -9,18 +9,19 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 export class FormExampleComponent {
   myForm: FormGroup;
   constructor() { }
-  test = "Default Value";
-  radio1 = new FormControl()
-  radio2 = new FormControl()
+
+  radio1 = new FormControl();
+  radio2 = new FormControl();
+  test = new FormControl();
   ngOnInit(){
     this.myForm = new FormGroup({
       radio1 : new FormControl({}),
       radio2 : new FormControl(''),
-      test2 : new FormControl(),
+      test : new FormControl(),
     });
   }
   onSubmit() {
-    console.log(this.myForm.getRawValue());
+    alert(this.myForm.getRawValue().test);
   }
 
   selectedOption: string;

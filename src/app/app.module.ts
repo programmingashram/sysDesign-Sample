@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
 import { ButtonExampleComponent } from './button-example/button-example.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
@@ -20,6 +19,7 @@ import { TreeExampleComponent } from './tree-example/tree-example.component';
 import { FormExampleComponent } from './form-example/form-example.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SlideExampleComponent } from './slide-example/slide-example.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 import { sysDesignModule } from 'sysdesign2023';
 
 
@@ -51,7 +51,8 @@ import { sysDesignModule } from 'sysdesign2023';
     MatIconModule,
     FormsModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]

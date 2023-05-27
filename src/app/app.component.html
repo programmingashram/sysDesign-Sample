@@ -1,43 +1,49 @@
+<sys-header [fixed]="true" color="light" [menuTrig]="true" logo="SYS DESIGN" (menuToggle)="togMenu()" [menu]="true" subTitle="New gen. frontend library" iconColor="accent" menuIcon="menu">
+  <form [formGroup]="myForm">
+    <select name="" id="" formControlName="test" (change)="myThemeChange()">
+      <option value="defaut">
+          Default
+      </option>
+      <option value="darkTheme">
+        Dark Theme
+    </option>
+    </select>
+  </form>
+</sys-header>
+
 <div class="sys-container">
   <div class="sidebar-container">
-    <sys-sidebar [small]="small">
-      <sys-sidebar-item menuIcon="menu" (click)="menu()"></sys-sidebar-item>
-      <sys-sidebar-item icon="smart_button"  route="/button" (click)="menu()">Buttons</sys-sidebar-item>
-      <sys-sidebar-item icon="view_agenda" label="Cards" route="/card"  [tree]="true">
-        <sys-tree  [nodes]="data" ></sys-tree>
+    <sys-sidebar [small]="small" >
+      <sys-sidebar-item icon="smart_button"  route="/button">Button</sys-sidebar-item>
+      <sys-sidebar-item icon="view_agenda" label="Cards" route="/card">
+        <!-- <sys-tree  [nodes]="data" ></sys-tree> -->
       </sys-sidebar-item>
-      <sys-sidebar-item icon="tab" label="Tabs" route="/tab" (click)="menu()"></sys-sidebar-item>
+      <sys-sidebar-item icon="tab" label="Tabs" route="/tab"></sys-sidebar-item>
       <sys-sidebar-item icon="keyboard_arrow_down" label="Expension Panel" route="/accordion" ></sys-sidebar-item>
-      <sys-sidebar-item icon="dock_to_right" label="Sidebar" route="/sidebar" (click)="menu()"></sys-sidebar-item>
-      <sys-sidebar-item icon="view_agenda" label="Dialog" route="/dialog" [tree]="true">
-        <sys-tree  [nodes]="data2" ></sys-tree>
-      </sys-sidebar-item>
-      <sys-sidebar-item icon="warning" label="Alerts" route="/alert" (click)="menu()"></sys-sidebar-item>
+      <sys-sidebar-item icon="dock_to_right" label="Sidebar" route="/sidebar"></sys-sidebar-item>
+      <sys-sidebar-item icon="view_agenda" label="Dialog" route="/dialog"></sys-sidebar-item>
+      <sys-sidebar-item icon="warning" label="Alerts" route="/alert"></sys-sidebar-item>
       <sys-sidebar-item icon="account_tree" label="Tree" route="/tree"></sys-sidebar-item>
-      <sys-sidebar-item icon="tab" label="Forms" route="/forms" (click)="menu()"></sys-sidebar-item>
-      <sys-sidebar-item icon="toggle_off" label="Slide Button" route="/togglebuttons" (click)="menu()"></sys-sidebar-item>
+      <sys-sidebar-item icon="tab" label="Forms" route="/forms"></sys-sidebar-item>
+      <sys-sidebar-item icon="toggle_off" label="Slide Button" route="/togglebuttons"></sys-sidebar-item>
       <sys-sidebar-item icon="table_rows" label="Table" route="/table"></sys-sidebar-item>
-      <sys-sidebar-item icon="verified" label="Badge" route="/badge" (click)="menu()"> </sys-sidebar-item>
+      <sys-sidebar-item icon="verified" label="Badge" route="/badge"> </sys-sidebar-item>
       <sys-sidebar-item icon="construction" label="ToolTip" route="/tooltip"></sys-sidebar-item>
       <sys-sidebar-item icon="view_kanban" label="Grid" route="/grid"></sys-sidebar-item>
       <sys-sidebar-item icon="footprint" label="Footer" route="/footer"></sys-sidebar-item>
       <sys-sidebar-item icon="face" label="Header" route="/header"></sys-sidebar-item>
     </sys-sidebar>
   </div>
-  <div class="right">
-    <sys-header [fixed]="true" color="light" logo="SYS DESIGN" [menu]="true" subTitle="New gen. frontend library">
-      <form [formGroup]="myForm">
-        <select name="" id="" formControlName="test" (change)="myThemeChange()">
-          <option value="defaut">
-              Default
-          </option>
-          <option value="darkTheme">
-            Dark Theme
-        </option>
-        </select>
-      </form>
-    </sys-header>
-  </div>
 </div>
 
 
+<sys-footbar copyright="Copyright Act, 1957 (the ‘Act’)">
+  <ul>
+    <li>
+      <a href="#">Term & Condistions</a>
+    </li>
+    <li>
+      <a href="#">About SYS-2.0</a>
+    </li>
+  </ul>
+</sys-footbar>

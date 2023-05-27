@@ -1,20 +1,24 @@
+import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { TreeNode } from 'sysdesign2023';
+
+
 
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
+
 })
 export class AppComponent {
   title = 'sys-design';
     small : boolean = true;
-    menu(){
+    togMenu(){
       this.small = !this.small;
     }
-
+    menuState:string = 'in';
   myForm: FormGroup;
   constructor() { }
 

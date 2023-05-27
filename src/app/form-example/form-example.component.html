@@ -4,7 +4,7 @@
           <tr>
               <th>Radios and Radio Group</th>
               <td>
-                <sys-radio type="radio" name="option1" label="Accent" formControlName="test2"  value="value1" [selected]="true"></sys-radio>
+                <sys-radio type="radio" name="option1" label="Accent"  value="value1" [selected]="true"></sys-radio>
               </td>
               <td>
                 <sys-radio type="radio"  name="option2" label="Error" [danger]="true" [selected]="true" value="value2"></sys-radio>
@@ -53,16 +53,16 @@
           <tr>
             <th>Search</th>
             <td>
-              <sys-input  type="search" label="label" value="" [default]="true"  placeholder="Placeholder values" errorIcon="error" errorMessege="Error messege" successIcon="check_circle"  successMessege="Success Message" sampleIcon="sort_by_alpha" sampleMessege="Sample Text" (search)="onSubmit()"></sys-input>
-              <span><strong>Output  : </strong>  {{this.myForm.getRawValue().test}}</span>
+              <sys-input  type="search" label="label" value="" [default]="true"  placeholder="Placeholder values" errorIcon="error" errorMessege="Error messege" successIcon="check_circle" formControlName="test" successMessege="Success Message" sampleIcon="sort_by_alpha" sampleMessege="Sample Text" (search)="onSubmit()"></sys-input>
+              <!-- <span><strong>Output  : </strong>  {{this.myForm.getRawValue().test}}</span> -->
             </td>
             <td>
               <sys-input  type="search" label="label" value="" [outline]="true"  placeholder="Placeholder values" errorIcon="error" errorMessege="Error messege" successIcon="check_circle"  successMessege="Success Message" sampleIcon="sort_by_alpha" sampleMessege="Sample Text" (search)="onSubmit()"></sys-input>
-              <span><strong>Output  : </strong>  {{this.myForm.getRawValue().test}}</span>
+              <!-- <span><strong>Output  : </strong>  {{this.myForm.getRawValue().test}}</span> -->
             </td>
             <td>
               <sys-input  type="search" label="label" value="" [modern]="true" placeholder="Placeholder values" errorIcon="error" errorMessege="Error messege" successIcon="check_circle"  successMessege="Success Message" sampleIcon="sort_by_alpha" sampleMessege="Sample Text" (search)="onSubmit()"></sys-input>
-              <span><strong>Output  : </strong>  {{this.myForm.getRawValue().test}}</span>
+              <!-- <span><strong>Output  : </strong>  {{this.myForm.getRawValue().test}}</span> -->
             </td>
           </tr>
           <tr>
