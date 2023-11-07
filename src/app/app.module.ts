@@ -21,10 +21,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SlideExampleComponent } from './slide-example/slide-example.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { sysDesignModule } from 'sysdesign2023';
-
+import { NgApexchartsModule } from 'ng-apexcharts';
 
 //  ng run sys-design:storybook
 //  ng run sys-design:build-storybook
+// ng build --output-path docs --base-href sysdesign
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { sysDesignModule } from 'sysdesign2023';
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    DragDropModule
+    DragDropModule,
+    NgApexchartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

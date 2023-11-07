@@ -1,18 +1,18 @@
-.d-flex{
-  display: flex;
-  gap: 0px 10px;
-  margin-bottom: 1rem;
-}
-@media(max-width: 767px){
-    .d-flex{
-      flex-wrap: wrap;
-      gap: 10px 10px;
-    }
-}
+// .d-flex{
+//   display: flex;
+//   gap: 0px 10px;
+//   margin-bottom: 1rem;
+// }
+// @media(max-width: 767px){
+//     .d-flex{
+//       flex-wrap: wrap;
+//       gap: 10px 10px;
+//     }
+// }
 
 
-::ng-deep{
-  .sys-card-body{
-     padding: 10px;
-  }
-}
+// ::ng-deep{
+//   .sys-card-body{
+//      padding: 10px;
+//   }
+// }

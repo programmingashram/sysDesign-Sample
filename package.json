@@ -22,6 +22,7 @@
     "@angular/router": "^15.2.0",
     "angular-gist": "^2.0.0",
     "i": "^0.3.7",
+    "ng-apexcharts": "^1.8.0",
     "ngx-doc-viewer": "^15.0.1",
     "ngx-gist": "^1.0.4",
     "ngx-highlight-js": "^15.0.0",
@@ -29,7 +30,7 @@
     "npm": "^9.6.5",
     "prismjs": "^1.29.0",
     "rxjs": "~7.8.0",
-    "sysdesign2023": "^0.3.8",
+    "sysdesign2023": "^1.2.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"
   },

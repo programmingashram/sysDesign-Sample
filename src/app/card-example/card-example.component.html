@@ -1,5 +1,5 @@
-<div class="p-10">
-  <div class="d-flex">
+<sys-grid [columns]="4">
+  <div>
     <sys-card title="Card Title" [divider]="true" subTitle="Sub Title">
       <sys-card-content>
           <p>
@@ -7,120 +7,99 @@
           </p>
       </sys-card-content>
     </sys-card>
-
-    <sys-card title="Card Title" subTitle="Sub Title" icon="settings">
+    <br>
+    
+    <sys-card title="The people" avatar="https://www.sketchappsources.com/resources/source-image/profile-illustration-gunaldi-yunus.png"   subTitle="Card Subtitle">
       <sys-card-content>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus facere deserunt, similique alias voluptatem a incidunt consectetur tenetur sequi soluta blanditiis esse eius, obcaecati quod aspernatur, praesentium magnam cumque sit.
-        </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus facere deserunt, similique alias voluptatem a incidunt consectetur tenetur sequi soluta blanditiis esse eius, obcaecati quod aspernatur, praesentium magnam cumque sit.
+          </p>
       </sys-card-content>
-
+    </sys-card>
+    <br>
+    
+    <div class="d-flex">
+      <sys-card title="The people" [sysCardBody]="false" [flatImage]="false" avatar="https://www.sketchappsources.com/resources/source-image/profile-illustration-gunaldi-yunus.png"   subTitle="Card Subtitle">
+        <sys-CardHeader-action>
+          <sys-button icon="more_vert"  [iconBtn]="true" color="default"></sys-button>
+        </sys-CardHeader-action>
+      </sys-card>
+    <sys-card title="The people" [sysCardBody]="true" [verticalSlot]="true" avatar="https://img.freepik.com/premium-vector/portrait-young-man-avatar-guy-social-networks-abstract-male-portrait-full-face-isolated-illustration-flat-style_276162-44.jpg"   subTitle="Card Subtitle">
+      <sys-CardHeader-action>
+        <sys-button icon="more_vert"  [iconBtn]="true" color="default"></sys-button>
+      </sys-CardHeader-action>
       <sys-card-action>
         <sys-button icon="cancel" class="textBtn" color="error">
-          Cancel
+          Reject
         </sys-button>
-
-        <sys-button icon="check" class="textBtn" color="olive">
+        <sys-button icon="check" class="default" color="olive">
           Accept
         </sys-button>
       </sys-card-action>
     </sys-card>
+    </div>
+  </div>
 
-    <sys-card title="Card Title" subTitle="Sub Title"  cardImg="https://clicxy.com/wp-content/uploads/2016/04/dummy-post-horisontal.jpg">
+
+    <sys-card title="Chemical"   [flatImage]="true"  subTitle="Product Categories"  cardImg="https://cdn.dribbble.com/users/60266/screenshots/13389733/media/0e5f5ac540a8f835d4b6f17e1d75693e.jpg?resize=400x0">
       <sys-CardHeader-action>
-        <sys-button icon="favorite"  [iconBtn]="true" > </sys-button>
+        <p><strong>Rs. 12999/-</strong></p>
       </sys-CardHeader-action>
       <sys-card-content>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus facere deserunt, similique alias voluptatem a incidunt consectetur tenetur sequi soluta blanditiis esse eius, obcaecati quod aspernatur, praesentium magnam cumque sit.
-        </p>
-      </sys-card-content>
-
-    </sys-card>
-
-
-    <sys-card title="Card Title" preIcon="account_circle" [flatImage]="true" subTitle="Sub Title" icon="favorite_border" cardImg="https://clicxy.com/wp-content/uploads/2016/04/dummy-post-horisontal.jpg">
-
-      <sys-card-content>
-        <p>
-
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus facere deserunt,
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus facere deserunt, similique alias 
         </p>
       </sys-card-content>
       <sys-card-action>
-        <sys-button icon="cancel" class="textBtn" color="error">
-          Cancel
+        <sys-button icon="shopping_bag"  class="default" color="default">
+          Buy Now
         </sys-button>
-
-        <sys-button icon="check" class="textBtn" color="olive">
-          Accept
+  
+        <sys-button icon="shopping_cart" class="default" color="default">
+          Add to Cart
         </sys-button>
       </sys-card-action>
     </sys-card>
-</div>
-<!-- -------------------------------------- -->
-
-
-
-
-<sys-card title="Card Title" subTitle="Sub Title" [horigentalCard]="true" >
-  <sys-card-content>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus facere deserunt, similique alias
-      </p>
-  </sys-card-content>
-</sys-card>
-<br>
-<sys-card preIcon="account_circle"  [horigentalCard]="true" >
-  <sys-card-content>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus facere deserunt, similique alias
-      </p>
-  </sys-card-content>
-  <sys-card-action>
-    <sys-button icon="check" class="textBtn" color="olive">
-      Accept
-    </sys-button>
-  </sys-card-action>
-</sys-card>
-<br>
-<sys-card preIcon="account_circle"  [horigentalCard]="true" >
-  <sys-card-content>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus facere deserunt, similique alias
-      </p>
-  </sys-card-content>
-  <sys-card-action>
-    <mat-icon class="mat-18">edit</mat-icon>
-  </sys-card-action>
-</sys-card>
-<br>
-
-
-
-  <!-- <sys-card  cardImg="https://clicxy.com/wp-content/uploads/2016/04/dummy-post-horisontal.jpg" [flatImage]="true" [horigentalCard]="true" >
-    <sys-card-content>
+    
+    <sys-card title="Chemical"  [flatImage]="false"  subTitle="Product Categories"  cardImg="https://cdn.dribbble.com/users/60266/screenshots/13389733/media/0e5f5ac540a8f835d4b6f17e1d75693e.jpg?resize=400x0">
+      <sys-CardHeader-action>
+        <p><strong>Rs. 12999/-</strong></p>
+      </sys-CardHeader-action>
+      <sys-card-content>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus facere deserunt, similique alias voluptatem a incidunt consectetur tenetur sequi soluta blanditiis esse eius, obcaecati quod aspernatur, praesentium magnam cumque sit.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus facere deserunt, similique alias 
         </p>
+      </sys-card-content>
+      <sys-card-action>
+        <sys-button icon="shopping_bag"  class="default" color="default">
+          Buy Now
+        </sys-button>
+  
+        <sys-button icon="shopping_cart" class="default" color="default">
+          Add to Cart
+        </sys-button>
+      </sys-card-action>
+    </sys-card>
+
+
+ <div class="d-flex">
+  <sys-card title="$ 628"  [flatImage]="false"  subTitle="Dharma Company">
+    <sys-CardHeader-action>
+      <mat-icon>bar_chart</mat-icon>
+    </sys-CardHeader-action>
+    <sys-card-content>
+      <div id="chart">
+        <apx-chart
+          [series]="chartOptions.series"
+          [chart]="chartOptions.chart"
+          [xaxis]="chartOptions.xaxis"
+          [stroke]="chartOptions.stroke"
+          [labels]="chartOptions.labels"
+          [annotations]="chartOptions.annotations"
+        ></apx-chart>
+        </div>
     </sys-card-content>
-    <sys-card-action>
-      <sys-button icon="check" class="textBtn" color="olive">
-        Accept
-      </sys-button>
-    </sys-card-action>
   </sys-card>
-
-  <sys-card  cardImg="https://clicxy.com/wp-content/uploads/2016/04/dummy-post-horisontal.jpg" [flatImage]="true" [horigentalCard]="true" >
-    <sys-card-content>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus facere deserunt, similique alias voluptatem a incidunt consectetur tenetur sequi soluta blanditiis esse eius, obcaecati quod aspernatur, praesentium magnam cumque sit.
-        </p>
-    </sys-card-content>
-    <sys-card-action>
-      <sys-button icon="check" class="textBtn" color="olive">
-        Accept
-      </sys-button>
-    </sys-card-action>
-  </sys-card> -->
-
+  </div>
+</sys-grid>
+ 
